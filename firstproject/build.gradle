@@ -29,9 +29,6 @@ dependencies {
 	implementation 'mysql:mysql-connector-java'
 	
 	
-	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper' //jsp
-    implementation 'javax.servlet:jstl' //jstl
-	
 	runtimeOnly 'com.h2database:h2'
 	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

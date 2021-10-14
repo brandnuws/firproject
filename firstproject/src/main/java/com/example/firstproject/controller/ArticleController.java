@@ -66,10 +66,6 @@ public class ArticleController {
 	 * //System.out.println(saved.toString()); log.info(saved.toString()); return
 	 * ""; }
 	 */
-	@GetMapping("/articles/test")
-	public String layout() {
-		return "/articles/test";
-	}
 
 	/*
 	 * @PostMapping("/articles/create") public String createArticle(ArticleForm
