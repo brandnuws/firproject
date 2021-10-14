@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,10 +32,10 @@ public class ArticleController {
 	public String index(Model model, Pageable pageable) {
 		// 모든 Article을 가져옴
         // Iterable 인터페이스는 ArrayList의 부모 인터페이스
-		//PageRequest pageRequest = new PageRequest(pNo - 1,10, Sort.Direction.DESC, "ename");
+		PageRequest pageRequest = PageRequest.of(0, 5);
 		
 		// 뷰 페이지로 articles 전달!
-		model.addAttribute("articles", findAllRepository.findAll(pageable));
+		model.addAttribute("articles", findAllRepository.findAll());
 		 // 뷰 페이지 설정
 		return "articles/index";
 		/*

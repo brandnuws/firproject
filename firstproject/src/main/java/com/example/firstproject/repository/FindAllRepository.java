@@ -9,5 +9,4 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import com.example.firstproject.entity.Article;
 														//<관리대상 엔티티,  
 public interface FindAllRepository extends JpaRepository<Article, String> {
-	List<Article> findAllByUserId(String membCardNo, Pageable pageable);
 }
