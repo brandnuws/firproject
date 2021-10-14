@@ -66,4 +66,24 @@ public class ArticleController {
 	 * //System.out.println(saved.toString()); log.info(saved.toString()); return
 	 * ""; }
 	 */
+	@GetMapping("/articles/test")
+	public String layout() {
+		return "/articles/test";
+	}
+
+	/*
+	 * @PostMapping("/articles/create") public String createArticle(ArticleForm
+	 * form) { //System.out.println(form.toString()); --> 로깅으로 대체
+	 * log.info(form.toString()); // dto를 entity로
+	 * 
+	 * Article article = form.toEntity(); //System.out.println(article.toString());
+	 * log.info(article.toString());
+	 * 
+	 * // repo 로 entity룰 db안에 저장 Article saved = articleRepository.save(article);
+	 * //System.out.println(saved.toString()); log.info(saved.toString()); return
+	 * ""; }
+	 */
+	
 }
+
+
