@@ -28,7 +28,7 @@ public class ArticleController {
 	//리파지터리 객체 자동 삽입됨! RequiredArgsConstructor
 	private final ArticleRepository articleRepository;
 	private final FindAllRepository findAllRepository;
-	@GetMapping("/articles")
+	@GetMapping("/home")
 	public String index(Model model, Pageable pageable) {
 		// 모든 Article을 가져옴
         // Iterable 인터페이스는 ArrayList의 부모 인터페이스
@@ -37,7 +37,7 @@ public class ArticleController {
 		// 뷰 페이지로 articles 전달!
 		model.addAttribute("articles", findAllRepository.findAll());
 		 // 뷰 페이지 설정
-		return "articles/index";
+		return "content/home";
 		/*
 		 * @GetMapping("/articles") public String index(Model model) { // 모든 Article을
 		 * 가져옴 // Iterable 인터페이스는 ArrayList의 부모 인터페이스 Iterable<Article> articleList =
