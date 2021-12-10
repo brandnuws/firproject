@@ -2,17 +2,11 @@ package com.example.firstproject.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.firstproject.dto.ArticleForm;
-import com.example.firstproject.entity.Article;
 import com.example.firstproject.repository.ArticleRepository;
 import com.example.firstproject.repository.FindAllRepository;
 

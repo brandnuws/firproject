@@ -43,6 +43,8 @@ public class Article {
 
 }
 
+
+
 /*
  * @Entity // db에서 entity로 인식할 수 있도록
  * 
