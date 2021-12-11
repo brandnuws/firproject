@@ -13,9 +13,9 @@ import lombok.ToString;
 @Table(name="KEV_SPT310")
 @Getter
 @Setter
-
+@ToString
 public class ManagedFree {
-	
+	@Id
 	@Column(name="TSU_CD")
 	String tsuCd;
 	

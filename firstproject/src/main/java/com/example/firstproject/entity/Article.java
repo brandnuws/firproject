@@ -24,10 +24,17 @@ public class Article {
 	private String membId;
 
 	@Column(name = "CHARGE_ST_DATE")
-	private String chargeStDate;
+	private String chargeStDate; 
 
 	@Column(name = "CHARGE_END_DATE")
 	private String chargeEndDate;
+	
+	
+	@Column(name = "CHARGE_ST_YMD")
+	private String chargeStYmd;
+	
+	@Column(name = "CHARGE_END_YMD")
+	private String chargeEndYmd;
 
 	@Column(name = "MEMB_CARD_NO")
 	private String membCardNo;

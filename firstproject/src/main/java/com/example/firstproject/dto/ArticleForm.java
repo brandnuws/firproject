@@ -20,6 +20,11 @@ public class ArticleForm {
 		private String MEMB_CARD_NO;
 		
 		
+		private String chargeStYmd;
+		
+		private String CHARGE_END_YMD;
+		
+		
 		/*===> @AllArgsConstructor
 		 * public ArticleForm(String title, String content) { this.title = title;
 		 * this.content = content; }
